@@ -12,3 +12,5 @@
 *.csv
 pkg/
 src/
+*.jpg
+*.jpeg
