@@ -1,11 +1,14 @@
 #!/bin/bash
 
-echo "this
-is
-a
-sample
-text
-file" >> test_data/text_test_file.txt
+echo "this this
+is is
+a a
+sample sample
+text text
+file file" >> test_data/text_test_file.txt
 
 # word count -lines
 wc -l test_data/text_test_file.txt
+
+# word count -words
+wc -w test_data/text_test_file.txt
