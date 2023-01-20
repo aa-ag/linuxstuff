@@ -5,6 +5,7 @@ is
 a
 sample
 text
-file" >> text_test_file.txt 
+file" >> test_data/text_test_file.txt
 
+# word count -lines
 wc -l test_data/text_test_file.txt
