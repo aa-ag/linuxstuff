@@ -15,3 +15,6 @@ wc -w test_data/text_test_file.txt
 
 ## get stats
 stat -l test_data/text_test_file.txt
+
+## metadata
+mdls test_data/text_test_file.txt
