@@ -19,3 +19,4 @@ stat -l test_data/text_test_file.txt
 ## metadata
 mdls test_data/text_test_file.txt
 ls -l@ test_data/text_test_file.txt
+exiftool test_data/text_test_file.txt
