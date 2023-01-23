@@ -14,3 +14,4 @@ pkg/
 src/
 *.jpg
 *.jpeg
+.DS_Store

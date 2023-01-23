@@ -1,0 +1,6 @@
+this, this this
+is, is is
+a, a a
+sample, sample sample
+text, text text
+file, file file
