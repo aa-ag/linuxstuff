@@ -8,3 +8,6 @@ sqlite3 testdb
 
 ## pour data from csv to table
 .import test_data/fake_data.csv fakedata
+
+## find tables
+.tables
