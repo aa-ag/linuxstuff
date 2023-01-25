@@ -11,3 +11,6 @@ sqlite3 testdb
 
 ## find tables
 .tables
+
+## see fakedata's table schema
+.schema fakedata
