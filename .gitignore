@@ -16,4 +16,5 @@ src/
 *.jpeg
 *.zip
 *.txt
+*.db
 .DS_Store
