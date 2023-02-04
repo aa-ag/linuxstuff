@@ -1,3 +1,3 @@
 #!/bin/bash
 
-$ openssl version
+$ openssl version -a
