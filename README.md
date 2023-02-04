@@ -8,3 +8,4 @@ A repo to compile Linux experiments & ideas.
 4. Metadata for files, [source](https://apple.stackexchange.com/questions/222342/terminal-command-to-get-all-of-a-files-metadata)
 5. Analysing a CSV file tabularly, [source](https://stackoverflow.com/questions/14947916/import-csv-to-sqlite)
 6. Encrypting & decrypting data, [source](https://stackoverflow.com/questions/33718005/how-to-encrypt-and-decrypt-a-string-text-in-shell-linux-environment)
+7. OpenSSL, [source](https://www.feistyduck.com/library/openssl-cookbook/online/openssl-command-line/building-openssl.html)
