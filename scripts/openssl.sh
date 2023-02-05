@@ -11,6 +11,11 @@ $ openssl genpkey -out fd.key -algorithm RSA -pkeyopt rsa_keygen_bits:2048 -aes-
 
 $ openssl pkey -in fd.key -text -noout
 
+$ openssl req -text -in fd.csr -noout
+
 $ openssl pkey -in fd.key -pubout -out fd-public.key
 
 $ cat fd-public.key
+
+## CSR
+$ openssl req -new -key fd.key -out fd.csr
