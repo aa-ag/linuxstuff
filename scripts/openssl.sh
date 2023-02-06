@@ -19,3 +19,6 @@ $ cat fd-public.key
 
 ## CSR
 $ openssl req -new -key fd.key -out fd.csr
+
+## self-signed CSR
+$ openssl req -new -x509 -days 365 -key fd.key -out fd.crt
