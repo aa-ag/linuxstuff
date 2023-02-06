@@ -22,3 +22,5 @@ $ openssl req -new -key fd.key -out fd.csr
 
 ## self-signed CSR
 $ openssl req -new -x509 -days 365 -key fd.key -out fd.crt
+
+$ openssl req -new -x509 -days 365 -key fd.key -out fd.crt -subj "/C=GB/L=London/O=Feisty Duck Ltd/CN=www.feistyduck.com"
