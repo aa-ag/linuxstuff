@@ -9,3 +9,4 @@ A repo to compile Linux experiments & ideas.
 5. Analysing a CSV file tabularly, [source](https://stackoverflow.com/questions/14947916/import-csv-to-sqlite)
 6. Encrypting & decrypting data, [source](https://stackoverflow.com/questions/33718005/how-to-encrypt-and-decrypt-a-string-text-in-shell-linux-environment)
 7. OpenSSL, [source](https://www.feistyduck.com/library/openssl-cookbook/online/openssl-command-line/building-openssl.html)
+8. IP addresses, [source](https://www.cyberciti.biz/faq/bash-shell-command-to-find-get-ip-address/)
