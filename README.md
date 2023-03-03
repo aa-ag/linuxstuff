@@ -10,3 +10,4 @@ A repo to compile Linux experiments & ideas.
 6. Encrypting & decrypting data, [source](https://stackoverflow.com/questions/33718005/how-to-encrypt-and-decrypt-a-string-text-in-shell-linux-environment)
 7. OpenSSL, [source](https://www.feistyduck.com/library/openssl-cookbook/online/openssl-command-line/building-openssl.html)
 8. IP addresses, [source](https://www.cyberciti.biz/faq/bash-shell-command-to-find-get-ip-address/)
+9. Sort files by "last modified", [source](https://unix.stackexchange.com/questions/122597/sort-the-files-in-the-directory-recursively-based-on-last-modified-date)
