@@ -20,3 +20,4 @@ stat -l test_data/text_test_file.txt
 mdls test_data/text_test_file.txt
 ls -l@ test_data/text_test_file.txt
 exiftool test_data/text_test_file.txt
+
