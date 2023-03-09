@@ -1,0 +1,1 @@
+zip -er protected_folder test_folder
