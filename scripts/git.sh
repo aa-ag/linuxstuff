@@ -1,2 +1,3 @@
 #!/bin/bash
-pwd
+THISFILE=$(pwd)
+echo $THISFILE
