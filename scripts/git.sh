@@ -1,3 +1,3 @@
 #!/bin/bash
-THISFILE=$(pwd)
+THISFILE="$(pwd)/${BASH_SOURCE[0]}"
 echo $THISFILE
