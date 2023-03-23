@@ -1,3 +1,4 @@
 #!/bin/bash
 THISFILE="$(pwd)/${BASH_SOURCE[0]}"
-echo $THISFILE
+# echo $THISFILE
+git add $THISFILE
