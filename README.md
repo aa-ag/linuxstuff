@@ -11,3 +11,4 @@ A repo to compile Shell experiments & ideas.
 7. OpenSSL, [source](https://www.feistyduck.com/library/openssl-cookbook/online/openssl-command-line/building-openssl.html)
 8. IP addresses, [source](https://www.cyberciti.biz/faq/bash-shell-command-to-find-get-ip-address/)
 9. Sort files by "last modified", [source](https://unix.stackexchange.com/questions/122597/sort-the-files-in-the-directory-recursively-based-on-last-modified-date)
+10. Create UI components to get user input via terminal, [source](https://linux.die.net/man/1/dialog)
