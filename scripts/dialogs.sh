@@ -1,2 +1,5 @@
-# dialog --calendar 'Matias calendar' 5 50 30 6 2021
-dialog --title "Yes or No"  --yesno "Is This Making Any Sense?" 6 25
+#!/bin/bash
+touch 'input.txt'
+dialog --title "User Input" \
+--backtitle "(testing linux stuff)" \
+--inputbox "Enter an input: " 8 6 2>'input.txt'
