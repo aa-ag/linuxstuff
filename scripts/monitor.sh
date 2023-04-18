@@ -7,4 +7,6 @@
 #     ((SNAPSHOT++))
 # done
 nc -U /tmp/demo.sock -l
-lsof /tmp/demo.sock 
+lsof /tmp/demo.sock
+nc -l 1234
+nc -N 127.0.0.1 1234
