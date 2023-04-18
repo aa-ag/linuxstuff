@@ -7,3 +7,4 @@
 #     ((SNAPSHOT++))
 # done
 nc -U /tmp/demo.sock -l
+lsof /tmp/demo.sock 
