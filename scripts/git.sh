@@ -6,4 +6,4 @@ git add "$addme"
 read -p "commit message: " cm
 git commit -m "$cm"
 echo '\n ^ pushing to' "${arr[4]}\n"
-git push
+git push --quiet
