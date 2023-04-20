@@ -5,7 +5,7 @@
 		"body": [
 			"#!/bin/bash",
 			"REMOTE=$(git remote -v)",
-			"arr=( $REMOTE )",
+			"arr=( $$REMOTE )",
 			"read -p \"git add: \" addme",
 			"git add \"$$addme\"",
 			"read -p \"commit message: \" cm",
