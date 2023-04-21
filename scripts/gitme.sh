@@ -26,5 +26,5 @@ done
 git add "$addme"
 read -p "${bold}Commit message${normal}: " cm
 git commit -s -m "$cm" --quiet
-echo "${green}pushing to${nocolor} ${dim}${arr[4]}"
+echo "${green}pushing to ${arr[4]}"
 git push --quiet
