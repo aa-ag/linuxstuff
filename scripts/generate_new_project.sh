@@ -22,5 +22,7 @@ git commit -m "$cm" --quiet
 echo '\n ^ pushing to' "${arr[4]}\n"
 git push --quiet
 EOL
-# (5) open the directory
+# (5) initialized git repository
+git init
+# (6) open the directory
 code .
