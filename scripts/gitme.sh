@@ -27,7 +27,7 @@ do
     read -p "git add: " addme
     echo 'File does not exist: try again.'
 done
-echo '\ngreat! added "$addme" to stagin'
+echo "\ngreat! added $addme to stagin"
 git add "$addme"
 read -p "commit message: " cm
 git commit -s -m "$cm" --quiet
