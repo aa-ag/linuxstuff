@@ -5,10 +5,11 @@ mkdir "$projectname"
 cd "$projectname"
 # (2) create a gitignore file
 touch .gitignore
-echo '.gitignore' gitme.sh
+echo 'gitme.sh' > .gitignore
 # (3) create a README
 touch README.md
-echo "### $projectname\n" > README.md
+title=$(python -c "print('$projectname'.title())")
+echo "### $title\n" > README.md
 # (4) create a gitme 
 touch gitme.sh
 cat >gitme.sh <<'EOL'
