@@ -1,12 +1,14 @@
 #!/bin/bash
 # THISFILE="$(pwd)/${BASH_SOURCE[0]}"
 # echo $THISFILE
+bold=$(tput bold)
+normal=$(tput sgr0)
 REMOTE=$(git remote -v)
 arr=( $REMOTE )
 addme=''
 while [ ! -f "$addme" ]
 do  
-    read -p "Path to file you want to add: " addme
+    read -p "${bold}Path to file you want to add:${normal} " addme
     if [ ! -f "$addme" ]; then
         echo "\n 🛑 \""$addme"\" doesn't exist.\n"
     else
@@ -14,7 +16,7 @@ do
     fi
 done
 git add "$addme"
-read -p "commit message: " cm
+read -p "${bold}Commit message${normal}: " cm
 git commit -s -m "$cm" --quiet
-echo '\n 🛫 pushing to' "${arr[4]} \n"
+echo "\n 🛫 ${bold}pushing to${normal} ${arr[4]} \n"
 git push --quiet
