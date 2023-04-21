@@ -1,6 +1,7 @@
-read -p "Root project directory name: " projectname
+read -p "Project name: " projectname
 mkdir "$projectname"
 cd "$projectname"
 touch .gitignore
 touch README.md
+echo "###$projectname\n\n" > README.md
 touch gitme.sh
