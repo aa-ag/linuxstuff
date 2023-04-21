@@ -16,15 +16,15 @@ arr=( $REMOTE )
 addme=''
 while [ ! -f "$addme" ]
 do  
-    read -p "> ${bold}path:${normal} " addme
+    read -p "${bold}path:${normal} " addme
     if [ ! -f "$addme" ]; then
         echo "${red}\""$addme"\" doesn't exist.${nocolor}"
     else
-        echo "${blue}staged \"$addme\".${nocolor}"
+        echo "  ${blue}staged \"$addme\".${nocolor}"
     fi
 done
 git add "$addme"
-read -p "> ${bold}message${normal}: " cm
+read -p "  ${bold}message${normal}: " cm
 git commit -s -m "$cm" --quiet
-echo "> ${green}pushing to ${arr[4]}${nocolor}"
+echo "    ${green}pushing to ${arr[4]}${nocolor}"
 git push --quiet
