@@ -25,7 +25,7 @@ read -p "git add: " addme
 if [[ -f "$addme" ]]; then
     git add "$addme"
     read -p "commit message: " cm
-    git commit -m "$cm" --quiet
+    git commit -s -m "$cm" --quiet
     echo '\n ^ pushing to' "${arr[4]}\n"
     git push --quiet
 else
