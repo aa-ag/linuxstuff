@@ -18,19 +18,32 @@ echo "### $title\n" > README.md
 # (4) create a gitme 
 touch gitme.sh
 cat >gitme.sh <<'EOL'
+bold=$(tput bold)
+normal=$(tput sgr0)
+dim=$(tput dim)
+
+red=$(tput setaf 1)
+green=$(tput setaf 2)
+blue=$(tput setaf 4)
+nocolor=$(tput sgr0)
+
 REMOTE=$(git remote -v)
 arr=( $REMOTE )
+
 addme=''
 while [ ! -f "$addme" ]
 do  
-    read -p "git add: " addme
-    echo 'File does not exist: try again.'
+    read -p "${bold}Path to file you want to add:${normal} " addme
+    if [ ! -f "$addme" ]; then
+        echo "${red}\""$addme"\" doesn't exist.${nocolor}"
+    else
+        echo "${blue}Added \"$addme\" to stagin.${nocolor}"
+    fi
 done
-echo "\ngreat! added $addme to stagin"
 git add "$addme"
-read -p "commit message: " cm
+read -p "${bold}Commit message${normal}: " cm
 git commit -s -m "$cm" --quiet
-echo '\n ^ pushing to' "${arr[4]}\n"
+echo "${green}pushing to ${arr[4]}${nocolor}"
 git push --quiet
 EOL
 # (5) initialized git repository
