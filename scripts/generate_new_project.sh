@@ -5,7 +5,12 @@ mkdir "$projectname"
 cd "$projectname"
 # (2) create a gitignore file
 touch .gitignore
-echo 'gitme.sh' > .gitignore
+cat >.gitignore <<'EOL'
+# https://github.com/github/gitignore
+gitme.sh
+.DS_Store
+.env
+EOL
 # (3) create a README
 touch README.md
 title=$(python -c "print('$projectname'.title())")
