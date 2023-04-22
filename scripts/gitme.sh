@@ -1,10 +1,8 @@
 #!/bin/bash
-# THISFILE="$(pwd)/${BASH_SOURCE[0]}"
-# echo $THISFILE
 bold=$(tput bold)
 normal=$(tput sgr0)
-dim=$(tput dim)
 
+cyan=$(tput setaf 6)
 red=$(tput setaf 1)
 green=$(tput setaf 2)
 blue=$(tput setaf 4)
@@ -12,6 +10,9 @@ nocolor=$(tput sgr0)
 
 REMOTE=$(git remote -v)
 arr=( $REMOTE )
+
+THISFILE="$(pwd)/${BASH_SOURCE[0]}"
+echo "${cyan}current working directory: $THISFILE${nocolor}"
 
 read -p "${bold}path:${normal} " addme
 IFS=' ' read -ra array <<< "$addme"
