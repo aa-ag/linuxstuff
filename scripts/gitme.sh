@@ -15,20 +15,19 @@ arr=( $REMOTE )
 
 read -p "${bold}path:${normal} " addme
 IFS=' ' read -ra array <<< "$addme"
-for i in "${array[@]}"
+for file in "${array[@]}"
 do
-    echo $i
+    # while [ ! -f "$file" ]
+    # do
+    if [ ! -f "$file" ]; then
+        echo "  ${red}\""$file"\" doesn't exist.${nocolor}"
+    else
+        git add "$file"
+        echo "  ${blue}staged \"$file\".${nocolor}"
+    fi
+    # done
 done
-# while [ ! -f "$addme" ]
-# do
-#     if [ ! -f "$addme" ]; then
-#         echo "${red}\""$addme"\" doesn't exist.${nocolor}"
-#     else
-#         echo "  ${blue}staged \"$addme\".${nocolor}"
-#     fi
-# done
-# git add "$addme"
-# read -p "  ${bold}message${normal}: " cm
-# git commit -s -m "$cm" --quiet
-# echo "  ${green}pushing to ${arr[4]}${nocolor}"
-# git push --quiet
+read -p "  ${bold}message${normal}: " cm
+git commit -s -m "$cm" --quiet
+echo "  ${green}pushing to ${arr[4]}${nocolor}"
+git push --quiet
