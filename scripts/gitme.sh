@@ -17,15 +17,14 @@ read -p "${bold}path:${normal} " addme
 IFS=' ' read -ra array <<< "$addme"
 for file in "${array[@]}"
 do
-    # while [ ! -f "$file" ]
-    # do
     if [ ! -f "$file" ]; then
         echo "  ${red}\""$file"\" doesn't exist.${nocolor}"
+        git reset
+        exit
     else
         git add "$file"
         echo "  ${blue}staged \"$file\".${nocolor}"
     fi
-    # done
 done
 read -p "  ${bold}message${normal}: " cm
 git commit -s -m "$cm" --quiet
